@@ -10,10 +10,6 @@
 
 # ScreenCleaner
 
-> *Real talk — MacBook screens get gross. You grab a cloth, start wiping, and suddenly tabs are flying, files are renamed to "ggggg", and Spotify is blasting. You spend 5 minutes fixing things instead of cleaning. The screen? Still dirty.*
-
----
-
 ## Why I Built This
 
 Okay, real talk — MacBook screens get *disgusting*.
