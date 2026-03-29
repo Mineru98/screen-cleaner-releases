@@ -10,27 +10,21 @@
 
 # ScreenCleaner
 
-> *You reach for the cloth. You start wiping. Then — a window flies open, music starts blasting, or worse, you've just sent a half-typed message to your boss.*
->
-> *Sound familiar?*
+> *Real talk — MacBook screens get gross. You grab a cloth, start wiping, and suddenly tabs are flying, files are renamed to "ggggg", and Spotify is blasting. You spend 5 minutes fixing things instead of cleaning. The screen? Still dirty.*
 
 ---
 
-## The Story
+## Why I Built This
 
-It always starts the same way.
+Okay, real talk — MacBook screens get *disgusting*.
 
-You're sitting at your desk, and you notice it — that smudge. The one that's been quietly growing on your MacBook screen for weeks. A constellation of fingerprints, dust, and mystery residue that catches the light at just the wrong angle during every video call.
+You finally decide to do something about it. Grab a cloth, lean in, start wiping — and suddenly a tab disappears, Spotify starts blasting at full volume, and somehow a file got renamed to "ggggggg".
 
-So you grab a microfiber cloth. You lean in. You start wiping.
+Now you're spending the next 5 minutes fixing things instead of cleaning.
 
-And that's when your MacBook betrays you.
+The screen? Still dirty.
 
-Your palm grazes the keyboard. A cascade of keypresses fires off: a tab switches, a file gets renamed, a half-written email gets sent. You scramble to undo the damage, and by the time you've recovered, your cloth is sitting forgotten on the desk and the smudge is still there — mocking you.
-
-The problem isn't the cloth. The problem is that **MacBooks have no "cleaning mode."**
-
-That's why ScreenCleaner exists.
+macOS has no built-in cleaning mode. So I made one.
 
 ---
 
@@ -84,9 +78,17 @@ brew install --cask screen-cleaner
 5. Wipe your screen freely
 6. The app automatically restores everything when the timer ends
 
-### Emergency Exit
+### Keys During Cleaning
 
-Changed your mind mid-clean? Hold **ESC for 5 seconds** to exit immediately.
+All keyboard input is blocked except for these three:
+
+| Key | Action |
+|-----|--------|
+| `F1` | Decrease brightness |
+| `F2` | Increase brightness |
+| `ESC` (hold 5 sec) | Cancel cleaning and restore everything |
+
+> Tap ESC once and nothing happens. Hold it for 5 full seconds to exit.
 
 ---
 
