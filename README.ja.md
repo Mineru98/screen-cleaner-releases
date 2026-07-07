@@ -55,6 +55,28 @@ brew install --cask screen-cleaner
 
 ---
 
+## アンインストール
+
+### Homebrew
+
+```bash
+brew uninstall --zap --cask screen-cleaner
+brew untap Mineru98/tap
+```
+
+### 手動削除
+
+1. メニューバーから**ScreenCleaner**を終了
+2. `/Applications`から**ScreenCleaner.app**を削除
+3. クリーン再インストールしたい場合は、アプリ設定も削除します:
+
+```bash
+rm -f ~/Library/Preferences/com.screencleaner.ScreenCleaner.plist
+rm -rf ~/Library/Application\ Support/ScreenCleaner
+```
+
+---
+
 ## 必要条件
 
 | | |

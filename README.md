@@ -55,6 +55,28 @@ brew install --cask screen-cleaner
 
 ---
 
+## Uninstall
+
+### Homebrew
+
+```bash
+brew uninstall --zap --cask screen-cleaner
+brew untap Mineru98/tap
+```
+
+### Manual
+
+1. Quit **ScreenCleaner** from the menu bar
+2. Delete **ScreenCleaner.app** from `/Applications`
+3. Remove the app preferences if you want a clean reinstall:
+
+```bash
+rm -f ~/Library/Preferences/com.screencleaner.ScreenCleaner.plist
+rm -rf ~/Library/Application\ Support/ScreenCleaner
+```
+
+---
+
 ## Requirements
 
 | | |
