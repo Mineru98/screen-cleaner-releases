@@ -55,38 +55,6 @@ brew install --cask screen-cleaner
 
 ---
 
-## Uninstall
-
-### Homebrew
-
-```bash
-brew uninstall --zap --cask screen-cleaner
-brew untap Mineru98/tap
-```
-
-### Manual
-
-1. Quit **ScreenCleaner** from the menu bar
-2. Delete **ScreenCleaner.app** from `/Applications`
-3. Remove the app preferences if you want a clean reinstall:
-
-```bash
-rm -f ~/Library/Preferences/com.screencleaner.ScreenCleaner.plist
-rm -rf ~/Library/Application\ Support/ScreenCleaner
-```
-
----
-
-## Requirements
-
-| | |
-|---|---|
-| **macOS** | 14 Sonoma or later |
-| **Permission** | Accessibility (for keyboard blocking) |
-| **Architecture** | Apple Silicon & Intel |
-
----
-
 ## Usage
 
 1. Launch **ScreenCleaner** from your Applications or menu bar
@@ -110,6 +78,16 @@ All keyboard input is blocked except for these three:
 
 ---
 
+## Requirements
+
+| | |
+|---|---|
+| **macOS** | 14 Sonoma or later |
+| **Permission** | Accessibility (for keyboard blocking) |
+| **Architecture** | Apple Silicon & Intel |
+
+---
+
 ## Features
 
 - System-level keyboard blocking via `CGEventTap` — nothing gets through
@@ -117,3 +95,25 @@ All keyboard input is blocked except for these three:
 - Crash-safe: brightness is automatically restored even if the app quits unexpectedly
 - Minimal UI — no clutter, just the timer and a button
 - Lives in the menu bar, out of your way until you need it
+
+---
+
+## Uninstall
+
+### Homebrew
+
+```bash
+brew uninstall --zap --cask screen-cleaner
+brew untap Mineru98/tap
+```
+
+### Manual
+
+1. Quit **ScreenCleaner** from the menu bar
+2. Delete **ScreenCleaner.app** from `/Applications`
+3. Remove the app preferences if you want a clean reinstall:
+
+```bash
+rm -f ~/Library/Preferences/com.screencleaner.ScreenCleaner.plist
+rm -rf ~/Library/Application\ Support/ScreenCleaner
+```

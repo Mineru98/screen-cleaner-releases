@@ -55,38 +55,6 @@ brew install --cask screen-cleaner
 
 ---
 
-## アンインストール
-
-### Homebrew
-
-```bash
-brew uninstall --zap --cask screen-cleaner
-brew untap Mineru98/tap
-```
-
-### 手動削除
-
-1. メニューバーから**ScreenCleaner**を終了
-2. `/Applications`から**ScreenCleaner.app**を削除
-3. クリーン再インストールしたい場合は、アプリ設定も削除します:
-
-```bash
-rm -f ~/Library/Preferences/com.screencleaner.ScreenCleaner.plist
-rm -rf ~/Library/Application\ Support/ScreenCleaner
-```
-
----
-
-## 必要条件
-
-| | |
-|---|---|
-| **macOS** | 14 Sonoma 以降 |
-| **権限** | アクセシビリティ（キーボードブロックに必要） |
-| **アーキテクチャ** | Apple Silicon & Intel |
-
----
-
 ## 使い方
 
 1. アプリケーションまたはメニューバーから**ScreenCleaner**を起動
@@ -110,6 +78,16 @@ rm -rf ~/Library/Application\ Support/ScreenCleaner
 
 ---
 
+## 必要条件
+
+| | |
+|---|---|
+| **macOS** | 14 Sonoma 以降 |
+| **権限** | アクセシビリティ（キーボードブロックに必要） |
+| **アーキテクチャ** | Apple Silicon & Intel |
+
+---
+
 ## 機能
 
 - `CGEventTap`によるシステムレベルのキーボードブロック — いかなる入力も通過しません
@@ -117,3 +95,25 @@ rm -rf ~/Library/Application\ Support/ScreenCleaner
 - クラッシュセーフ：アプリが予期せず終了しても、輝度が自動的に復元されます
 - ミニマルなUI — タイマーとボタンだけのシンプルな画面
 - メニューバーに常駐し、必要なときだけ使えます
+
+---
+
+## アンインストール
+
+### Homebrew
+
+```bash
+brew uninstall --zap --cask screen-cleaner
+brew untap Mineru98/tap
+```
+
+### 手動削除
+
+1. メニューバーから**ScreenCleaner**を終了
+2. `/Applications`から**ScreenCleaner.app**を削除
+3. クリーン再インストールしたい場合は、アプリ設定も削除します:
+
+```bash
+rm -f ~/Library/Preferences/com.screencleaner.ScreenCleaner.plist
+rm -rf ~/Library/Application\ Support/ScreenCleaner
+```

@@ -55,38 +55,6 @@ brew install --cask screen-cleaner
 
 ---
 
-## 삭제 방법
-
-### Homebrew
-
-```bash
-brew uninstall --zap --cask screen-cleaner
-brew untap Mineru98/tap
-```
-
-### 수동 삭제
-
-1. 메뉴 바에서 **ScreenCleaner** 종료
-2. `/Applications`에서 **ScreenCleaner.app** 삭제
-3. 완전히 새로 설치하려면 앱 설정 파일도 삭제:
-
-```bash
-rm -f ~/Library/Preferences/com.screencleaner.ScreenCleaner.plist
-rm -rf ~/Library/Application\ Support/ScreenCleaner
-```
-
----
-
-## 요구 사항
-
-| | |
-|---|---|
-| **macOS** | 14 Sonoma 이상 |
-| **권한** | 손쉬운 사용 (키보드 차단을 위해 필요) |
-| **아키텍처** | Apple Silicon 및 Intel |
-
----
-
 ## 사용 방법
 
 1. 애플리케이션 또는 메뉴 바에서 **ScreenCleaner** 실행
@@ -110,6 +78,16 @@ rm -rf ~/Library/Application\ Support/ScreenCleaner
 
 ---
 
+## 요구 사항
+
+| | |
+|---|---|
+| **macOS** | 14 Sonoma 이상 |
+| **권한** | 손쉬운 사용 (키보드 차단을 위해 필요) |
+| **아키텍처** | Apple Silicon 및 Intel |
+
+---
+
 ## 기능
 
 - `CGEventTap`을 통한 시스템 수준 키보드 차단 — 어떤 입력도 통과하지 않습니다
@@ -117,3 +95,25 @@ rm -rf ~/Library/Application\ Support/ScreenCleaner
 - 크래시 안전: 앱이 예기치 않게 종료되어도 밝기가 자동으로 복원됩니다
 - 미니멀한 UI — 타이머와 버튼만 있는 간결한 화면
 - 메뉴 바에 상주하여 필요할 때만 눈에 띕니다
+
+---
+
+## 삭제 방법
+
+### Homebrew
+
+```bash
+brew uninstall --zap --cask screen-cleaner
+brew untap Mineru98/tap
+```
+
+### 수동 삭제
+
+1. 메뉴 바에서 **ScreenCleaner** 종료
+2. `/Applications`에서 **ScreenCleaner.app** 삭제
+3. 완전히 새로 설치하려면 앱 설정 파일도 삭제:
+
+```bash
+rm -f ~/Library/Preferences/com.screencleaner.ScreenCleaner.plist
+rm -rf ~/Library/Application\ Support/ScreenCleaner
+```

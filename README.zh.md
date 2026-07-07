@@ -55,38 +55,6 @@ brew install --cask screen-cleaner
 
 ---
 
-## 卸载方法
-
-### Homebrew
-
-```bash
-brew uninstall --zap --cask screen-cleaner
-brew untap Mineru98/tap
-```
-
-### 手动删除
-
-1. 从菜单栏退出 **ScreenCleaner**
-2. 从 `/Applications` 删除 **ScreenCleaner.app**
-3. 如果想要完全重新安装，也删除应用设置文件：
-
-```bash
-rm -f ~/Library/Preferences/com.screencleaner.ScreenCleaner.plist
-rm -rf ~/Library/Application\ Support/ScreenCleaner
-```
-
----
-
-## 系统要求
-
-| | |
-|---|---|
-| **macOS** | 14 Sonoma 或更高版本 |
-| **权限** | 辅助功能（键盘阻止所需） |
-| **架构** | Apple Silicon 和 Intel |
-
----
-
 ## 使用方法
 
 1. 从应用程序或菜单栏启动 **ScreenCleaner**
@@ -110,6 +78,16 @@ rm -rf ~/Library/Application\ Support/ScreenCleaner
 
 ---
 
+## 系统要求
+
+| | |
+|---|---|
+| **macOS** | 14 Sonoma 或更高版本 |
+| **权限** | 辅助功能（键盘阻止所需） |
+| **架构** | Apple Silicon 和 Intel |
+
+---
+
 ## 功能特性
 
 - 通过 `CGEventTap` 实现系统级键盘阻止 — 任何输入都无法通过
@@ -117,3 +95,25 @@ rm -rf ~/Library/Application\ Support/ScreenCleaner
 - 崩溃安全：即使应用意外退出，屏幕亮度也会自动恢复
 - 极简 UI — 只有计时器和按钮，简洁明了
 - 常驻菜单栏，需要时随时调用
+
+---
+
+## 卸载方法
+
+### Homebrew
+
+```bash
+brew uninstall --zap --cask screen-cleaner
+brew untap Mineru98/tap
+```
+
+### 手动删除
+
+1. 从菜单栏退出 **ScreenCleaner**
+2. 从 `/Applications` 删除 **ScreenCleaner.app**
+3. 如果想要完全重新安装，也删除应用设置文件：
+
+```bash
+rm -f ~/Library/Preferences/com.screencleaner.ScreenCleaner.plist
+rm -rf ~/Library/Application\ Support/ScreenCleaner
+```
