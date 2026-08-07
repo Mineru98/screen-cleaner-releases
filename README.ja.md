@@ -43,8 +43,7 @@ macOSにクリーニングモードがないから、作りました。
 ### Homebrew（推奨）
 
 ```bash
-brew tap Mineru98/tap
-brew install --cask screen-cleaner
+brew install --cask mineru98/tap/screen-cleaner
 ```
 
 ### 手動インストール

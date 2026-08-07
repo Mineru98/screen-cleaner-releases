@@ -43,8 +43,7 @@ macOS에 청소 모드가 없어서 만들었습니다.
 ### Homebrew (권장)
 
 ```bash
-brew tap Mineru98/tap
-brew install --cask screen-cleaner
+brew install --cask mineru98/tap/screen-cleaner
 ```
 
 ### 수동 설치

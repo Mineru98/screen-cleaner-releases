@@ -43,8 +43,7 @@ When the timer ends, everything comes back exactly as you left it. Clean screen,
 ### Homebrew (recommended)
 
 ```bash
-brew tap Mineru98/tap
-brew install --cask screen-cleaner
+brew install --cask mineru98/tap/screen-cleaner
 ```
 
 ### Manual
